@@ -34,5 +34,3 @@ for (const todo_lists of todo_list){
         </div>
     `
 }
-
-const employeeEl = document.getElementById(employees.id)
