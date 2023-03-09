@@ -1,7 +1,7 @@
 const todo_list = [
     {    
         name: 'Janice',
-        todo: [
+        Todo: [
             'Eggs',
             'Bread',
             'Cereal'
@@ -9,7 +9,7 @@ const todo_list = [
     },
     {    
         name: 'Velma',
-        todo: [
+        Todo: [
             'Cheese',
             'Ramen',
             'Pizza'
@@ -17,7 +17,7 @@ const todo_list = [
     },
     {    
         name: 'Daphne',
-        todo: [
+        Todo: [
             'Rolls',
             'Nuggets',
             'Toilet_Paper'
@@ -30,14 +30,9 @@ for (const todo_lists of todo_list){
     peopleContainer.innerHTML += `
         <div class="card">
             <h2>${todo_lists.name}<h2>            
-            <ol>Skills: ${employee.skills}</ol>
+            <ol>Todo_list: ${todo_lists.todo}</ol>
         </div>
     `
-    const employeeEl = document.getElementById(employees.id)
-    employeeEl.addEventListener('click', function()
-    {
-        console.log('Hello')
-    })
 }
 
 const employeeEl = document.getElementById(employees.id)
