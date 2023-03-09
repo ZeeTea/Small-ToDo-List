@@ -1,7 +1,7 @@
 const todo_list = [
     {    
         name: 'Janice',
-        skills: [
+        todo: [
             'Eggs',
             'Bread',
             'Cereal'
@@ -9,7 +9,7 @@ const todo_list = [
     },
     {    
         name: 'Velma',
-        skills: [
+        todo: [
             'Cheese',
             'Ramen',
             'Pizza'
@@ -17,7 +17,7 @@ const todo_list = [
     },
     {    
         name: 'Daphne',
-        skills: [
+        todo: [
             'Rolls',
             'Nuggets',
             'Toilet_Paper'
@@ -26,11 +26,10 @@ const todo_list = [
 ]
 
 const peopleContainer = document.getElementById('people')
-for (const employee of employees){
+for (const todo_lists of todo_list){
     peopleContainer.innerHTML += `
-        <div class="card" id="${employee.id}">
-            <h2>${employee.name}<h2>            
-            <p>JobTitle: ${employee.jobTitle}</p>
+        <div class="card">
+            <h2>${todo_lists.name}<h2>            
             <ol>Skills: ${employee.skills}</ol>
         </div>
     `
