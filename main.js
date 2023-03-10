@@ -30,7 +30,11 @@ for (const todo_lists of todo_list){
     peopleContainer.innerHTML += `
         <div class="card">
             <h2>${todo_lists.name}<h2>            
-            <ol>Todo_list: ${todo_lists.todo}</ol>
+            <ul>
+                <li>${todo_lists.Todo[0]}<li>
+                <li>${todo_lists.Todo[1]}<li>
+                <li>${todo_lists.Todo[2]}<li>
+            </ul>
         </div>
     `
 }
